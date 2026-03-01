@@ -14,5 +14,14 @@ Example:
 - `print(calc.add(5, 3))        # 8`
 - `print(calc.divide(10, 2))    # 5.0`
 
-**Division by zero handling `calc.divide(5, 0)`**
+#### Division by zero handling `calc.divide(5, 0)`
 This raises: `ValueError`: Cannot divide by zero
+
+---
+
+## Running Unit Tests
+This project uses **pytest** as the testing framework.
+
+To run all unit tests, execute the following command from the project root directory: `pytest`
+- All tests will be automatically discovered inside the tests/ folder.
+- If pytest is not installed, install it first: `pip install pytest`
