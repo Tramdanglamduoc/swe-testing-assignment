@@ -1,6 +1,5 @@
 # swe-testing-assignment
 
----
 
 ## Project Description
 
@@ -9,6 +8,7 @@ Quick-Calc is a simple desktop calculator application built with Python. It foll
 The project was developed with a strong focus on software testing principles, including unit testing and integration testing, ensuring that both the core logic and the interaction between the GUI and logic layer function correctly.
 
 ## Project Structure
+```
 swe-testing-assignment/
 │
 ├── quick_calc/
@@ -22,8 +22,8 @@ swe-testing-assignment/
 │
 ├── README.md
 └── requirements.txt (if applicable)
+```
 
----
 
 ## Setup Instructions
 
@@ -52,7 +52,6 @@ To run the GUI correctly, execute it as a Python module from the project root di
 #### Important:
 Do NOT run `gui.py` directly (e.g., python quick_calc/gui.py), as this will cause a `ModuleNotFoundError`. The project uses a package structure, so it must be executed as a module.
 
----
 
 ## How to Run Tests
 
@@ -67,7 +66,7 @@ To run all unit tests and all integration tests, execute the following command f
     - Integration tests verifying GUI with calculation logic interaction
 
 All tests should pass successfully.
----
+
 
 ## Running the Core Calculator (Logic Only)
 
@@ -88,9 +87,8 @@ Example:
 #### Division by zero handling `calc.divide(5, 0)`
 This raises: `ValueError`: Cannot divide by zero
 
----
 
-### Testing Framework Research: Pytest vs Unittest
+## Testing Framework Research: Pytest vs Unittest
 
 Python provides multiple testing frameworks, with `unittest` and `pytest` being widely used.
 
@@ -100,7 +98,7 @@ In contrast, `pytest` is a third-party framework designed to simplify testing. I
 
 For this project, **`pytest` was chosen** because of its simplicity, readability, and superior support for fixtures. The integration tests for the Tkinter GUI benefit from pytest’s fixture system  (for setting up test environments), which cleanly manages setup and teardown of the Tkinter root window. Overall, pytest reduces boilerplate code and improves clarity, making it a better choice for this simple application - software testing project.
 
----
+
 ## Test Coverage Overview
 
 - Unit tests cover all four arithmetic operations.
@@ -111,10 +109,7 @@ For this project, **`pytest` was chosen** because of its simplicity, readability
 
 ## Author
 
-Ngoc Bao Tram Tran
-
-Riga Technical University
-
-ngoc-bao-tram.tran@edu.rtu.lv
-
-Applied System Software (DIP392)
+- Full Name: Ngoc Bao Tram Tran
+- University: Riga Technical University
+- Email: ngoc-bao-tram.tran@edu.rtu.lv
+- Course: Applied System Software (DIP392)
