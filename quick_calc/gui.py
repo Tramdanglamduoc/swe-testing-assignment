@@ -186,6 +186,17 @@ class QuickCalcApp:
 
         self._refresh()
 
+    # ---------- Test helpers ----------
+    def press(self, key: str):
+        """Simulate pressing a button (used by integration tests)."""
+        self._on_press(key)
+        # Ensure Tk updates internal state
+        self.root.update_idletasks()
+
+    def get_display(self) -> str:
+        """Return the current display text (used by integration tests)."""
+        return str(self.display.cget("text"))
+    
 
 if __name__ == "__main__":
     root = tk.Tk()

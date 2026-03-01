@@ -23,18 +23,22 @@ This raises: `ValueError`: Cannot divide by zero
 
 ## Project Execution
 
-## Running Unit Tests
+### Running Unit Tests & Integration Tests
 This project uses **pytest** as the testing framework.
 
-To run all unit tests, execute the following command from the project root directory: `pytest`
-- All tests will be automatically discovered inside the tests/ folder.
-- If pytest is not installed, install it first: `pip install pytest`
+If pytest is not installed, install it first: `pip install pytest`
 
-## Running the Graphical Interface (GUI)
+To run all unit tests and all integration tests, execute the following command from the project root directory: `pytest`
+- All tests will be automatically discovered inside the `tests/` folder.
+    - Unit tests for calculator logic
+    - Integration tests verifying GUI with calculation logic interaction
+    
+
+### Running the Graphical Interface (GUI)
 
 The calculator also includes a Tkinter-based graphical interface.
 
 To run the GUI correctly, execute it as a Python module from the project root directory: `python -m quick_calc.gui`
 
-### Important:
+#### Important:
 Do NOT run `gui.py` directly (e.g., python quick_calc/gui.py), as this will cause a `ModuleNotFoundError`. The project uses a package structure, so it must be executed as a module.
