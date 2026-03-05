@@ -21,6 +21,7 @@ swe-testing-assignment/
 │   └── test_integration.py # Integration tests (GUI ↔ logic)
 │
 ├── README.md
+├── TESTING.md
 └── requirements.txt (if applicable)
 ```
 
@@ -43,7 +44,7 @@ Install pytest:
 pip install pytest
 ```
 
-### 3. Run the Graphical Interface (GUI)
+### 3.1. Run the Graphical Interface (GUI)
 
 The calculator includes a Tkinter-based graphical interface.
 
@@ -55,6 +56,24 @@ python -m quick_calc.gui
 #### Important:
 Do NOT run `gui.py` directly (e.g., python quick_calc/gui.py), as this will cause a `ModuleNotFoundError`. The project uses a package structure, so it must be executed as a module.
 
+### 3.2. Running the Core Calculator (Logic Only)
+
+The project with the core calculation logic (`calculator.py`) only.
+
+#### Start Python from the project root directory
+
+Open a terminal inside the project folder and run:
+```python
+from quick_calc.calculator import Calculator
+calc = Calculator()
+```
+
+Example:
+- `print(calc.add(5, 3))        # 8`
+- `print(calc.divide(10, 2))    # 5.0`
+
+##### Division by zero handling `calc.divide(5, 0)`
+This raises: `ValueError`: Cannot divide by zero
 
 ## How to Run Tests
 
@@ -69,26 +88,6 @@ To run all unit tests and all integration tests, execute the following command f
     - Integration tests verifying GUI with calculation logic interaction
 
 All tests should pass successfully.
-
-
-## Running the Core Calculator (Logic Only)
-
-The project with the core calculation logic (`calculator.py`) only.
-
-### Start Python from the project root directory
-
-Open a terminal inside the project folder and run:
-```python
-from quick_calc.calculator import Calculator
-calc = Calculator()
-```
-
-Example:
-- `print(calc.add(5, 3))        # 8`
-- `print(calc.divide(10, 2))    # 5.0`
-
-#### Division by zero handling `calc.divide(5, 0)`
-This raises: `ValueError`: Cannot divide by zero
 
 
 ## Testing Framework Research: Pytest vs Unittest
