@@ -27,7 +27,7 @@ Testing is organized into two layers: unit tests for the `Calculator` logic and 
 
 ### Testing Pyramid
 
-The test suite follows the **Testing Pyramid principle**, where the majority of tests are unit tests (12 tests) and a smaller number are integration tests (4 tests). Unit tests are faster, simpler, and isolate the calculation logic, while integration tests verify that different components of the system work together correctly. This structure ensures efficient testing while maintaining good coverage.
+The test suite follows the **Testing Pyramid principle**, where the majority of tests are unit tests (12 tests - 75%) and a smaller number are integration tests (4 tests - 25%). Unit tests are faster, simpler, and isolate the calculation logic, while integration tests verify that different components of the system work together correctly. This structure ensures efficient testing while maintaining good coverage.
 
 The base of pyramid should consists of mostly unit tests, followed by integration tests.
 
@@ -47,7 +47,7 @@ Non-functional aspects such as performance, usability, and graphical design were
 
 ### Regression Testing
 
-The test suite also supports **regression testing**. Whenever new features or changes are introduced, running the full test suite with `pytest` ensures that previously working functionality has not been broken. If any test fails, it indicates that a regression has occurred.
+The test suite (unit tests + integration tests) also supports **regression testing**. Whenever new features or changes are introduced, running the full test suite (unit tests + integration tests) with `pytest` ensures that previously working functionality has not been broken. If any test fails, it indicates that a regression has occurred.
 
 ---
 
