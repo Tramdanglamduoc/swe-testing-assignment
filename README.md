@@ -109,9 +109,16 @@ This raises: `ValueError`: Cannot divide by zero
 ### Running Unit Tests & Integration Tests
 This project uses **pytest** as the testing framework.
 
-If pytest is not installed, install it first: `pip install pytest`
+If pytest is not installed, install it first: 
+```bash
+pip install pytest
+```
 
-To run all unit tests and all integration tests, execute the following command from the project root directory: `pytest`
+To run all unit tests and all integration tests, execute the following command from the project root directory: 
+```bash
+pytest
+```
+
 - All tests will be automatically discovered inside the `tests/` folder.
     - Unit tests for calculator logic
     - Integration tests verifying GUI with calculation logic interaction
