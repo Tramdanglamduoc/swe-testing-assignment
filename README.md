@@ -30,18 +30,25 @@ swe-testing-assignment/
 
 ### 1. Clone the repository
 
-```python
+```bash
 git clone https://github.com/Tramdanglamduoc/swe-testing-assignment
 cd swe-testing-assignment
 ```
+**Note:** The cd command may vary depending on where you cloned the repository.
+
+Make sure you navigate to the folder where the project was downloaded.
 
 ### 2. Install dependencies
 
-This project requires Python 3.10+. - recommends Python 3.13 
+This project requires Python 3.10 or later (Python 3.13 recommended).
 
 Install pytest:
-```python
-pip install pytest
+```bash
+pip install pytest #For Windows system
+```
+or
+```bash
+python3 -m pip install pytest #For MacOS system
 ```
 
 ### 3.1. Run the Graphical Interface (GUI)
@@ -49,8 +56,13 @@ pip install pytest
 The calculator includes a Tkinter-based graphical interface.
 
 To run the GUI correctly, execute it as a Python module from the project root directory: 
-```python
-python -m quick_calc.gui
+```bash
+python -m quick_calc.gui #For Windows system
+```
+
+or
+```bash
+python3 -m quick_calc.gui #For MacOS system
 ```
 
 #### Important:
@@ -63,6 +75,23 @@ The project with the core calculation logic (`calculator.py`) only.
 #### Start Python from the project root directory
 
 Open a terminal inside the project folder and run:
+
+```bash
+python #For Windows System
+```
+
+or
+
+```bash
+python3 #For MacOS System
+```
+
+You then should see the Python interpreter prompt:
+```bash
+>>>
+```
+
+Inside the Python interpreter, run:
 ```python
 from quick_calc.calculator import Calculator
 calc = Calculator()
