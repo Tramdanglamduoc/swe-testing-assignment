@@ -47,7 +47,10 @@ pip install pytest
 
 The calculator includes a Tkinter-based graphical interface.
 
-To run the GUI correctly, execute it as a Python module from the project root directory: `python -m quick_calc.gui`
+To run the GUI correctly, execute it as a Python module from the project root directory: 
+```python
+python -m quick_calc.gui
+```
 
 #### Important:
 Do NOT run `gui.py` directly (e.g., python quick_calc/gui.py), as this will cause a `ModuleNotFoundError`. The project uses a package structure, so it must be executed as a module.
